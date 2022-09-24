@@ -1,0 +1,82 @@
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 119, 116);
+}
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px #fff ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card_title{
+    text-align: center;
+    font-size: 35px;
+    grid-column: span 2
+}
+
+.card_subtitle{
+    text-align: center;
+    grid-column: span 2;
+    font-size: 20px;
+}
+
+.card_second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.second_list{
+    display: grid;
+    gap: 7px;
+}
+
+.second_item{
+    color: #fffa;
+}
+
+.second_span{
+    color:aqua
+}
+
+.card_temperature{
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card_btn{
+    grid-column: span 2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #00ffffaa;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: transform 100ms ease;
+}
+
+.card_btn:hover{
+transform: scale(1.05);
+transition: transform 100ms ease;
+filter: brightness(1.2);
+}
